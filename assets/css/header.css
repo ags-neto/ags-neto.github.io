@@ -1,0 +1,52 @@
+/*
+ * Filename: header.css
+ * Path: /home/netoa/Desktop/ags-neto/assets/css
+ * Created Date: Sunday April 6th 2025
+ * Author: Andre Neto
+ * -----
+ * Last Modified: Sun Apr 06 2025
+ * Modified By: Andre Neto
+ */
+
+.site-header {
+  background-color: #0d1117;
+  padding: 1em 0;
+}
+
+.navbar {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left,
+.navbar-right {
+  font-family: monospace;
+}
+
+.bold-link {
+  font-weight: bold;
+}
+
+.navbar-link,
+.navbar-center a {
+  color: #fff;
+  text-decoration: none;
+  font-family: monospace;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover,
+.navbar-center a:hover {
+  color: #ccc;
+}
+
+.navbar-center {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,40 @@
+/*
+ * Filename: main.css
+ * Path: /home/netoa/Desktop/ags-neto/assets/css
+ * Created Date: Sunday April 6th 2025
+ * Author: Andre Neto
+ * -----
+ * Last Modified: Sun Apr 06 2025
+ * Modified By: Andre Neto
+ */
+
+/* ============================
+   IMPORTS
+   ============================ */
+
+@import "header.css";
+@import url("header.css");
+
+@import "profile-card.css";
+@import url("profile-card.css");
+
+@import "tech-icons.css";
+@import url("tech-icons.css");
+
+@import "timeline.css";
+@import url("timeline.css");
+
+@import "footer.css";
+@import url("footer.css");
+
+/* ============================
+   GLOBAL STYLES
+   ============================ */
+
+body {
+  background-color: #0d1117;
+  color: #ffffff;
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}

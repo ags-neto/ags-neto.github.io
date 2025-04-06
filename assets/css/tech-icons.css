@@ -1,0 +1,96 @@
+/*
+ * Filename: tech-icons.css
+ * Path: /home/netoa/Desktop/ags-neto/assets/css
+ * Created Date: Sunday April 6th 2025
+ * Author: Andre Neto
+ * -----
+ * Last Modified: Sun Apr 06 2025
+ * Modified By: Andre Neto
+ */
+
+/* ============================
+   TECH ICONS
+   ============================ */
+
+.tech-stack {
+  background-color: #0d1117;
+  color: #ffffff;
+  font-family: monospace;
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 1em;
+  text-align: left;
+}
+
+.tech-stack h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  justify-content: center;
+  align-items: center;
+  gap: 2em 2em;
+  max-width: 100%;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+  justify-content: center;
+  align-items: center;
+  gap: 2em 2em;
+  max-width: 100%;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+.tech-icons img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+/* ============================
+   TECH ITEM WITH LABEL ON HOVER
+   ============================ */
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.tech-item img {
+  height: 40px;
+  width: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s, transform 0.2s;
+}
+
+.tech-item:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.tech-label {
+  font-size: 0.75em;
+  color: #aaa;
+  margin-top: 0.4em;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-family: monospace;
+  text-align: center;
+}
+
+.tech-item:hover .tech-label {
+  opacity: 1;
+}

@@ -1,0 +1,139 @@
+/*
+ * Filename: timeline.css
+ * Path: /home/netoa/Desktop/ags-neto/assets/css
+ * Created Date: Sunday April 6th 2025
+ * Author: Andre Neto
+ * -----
+ * Last Modified: Sun Apr 06 2025
+ * Modified By: Andre Neto
+ */
+
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto 0em auto;
+  padding: 0 0em;
+  font-family: monospace;
+  text-align: left;
+}
+
+/* Flex column container holds line + content */
+.timeline-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Vertical line adapts to content height */
+.timeline-line {
+  position: absolute;
+  top: 1.5em;
+  bottom: 3.5em;
+  left: 12px;
+  width: 2px;
+  background-color: #ccc;
+  z-index: 0;
+}
+
+.timeline h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+
+/* Cada item da timeline */
+.timeline-item {
+  position: relative;
+  margin-bottom: 3em;
+  padding-left: 3em;
+}
+
+/* Marcador apenas em cada novo item */
+.timeline-marker {
+  position: absolute;
+  left: 5px;
+  top: 0.4em;
+  width: 12px;
+  height: 12px;
+  background-color: #00a0b5;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Conteúdo */
+.timeline-content {
+  color: #ddd;
+}
+
+.timeline-content h3 {
+  margin: 1.5em 0 0.5em;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.timeline-content .period {
+  display: block;
+  color: #999;
+  font-size: 0.85em;
+  margin-bottom: 0.5em;
+}
+
+.timeline-content p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.company {
+  color: #00b1c8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.company:hover {
+  text-decoration: underline;
+}
+
+.subhref {
+  color: #5cdbec;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.subhref:hover {
+  text-decoration: underline;
+}
+
+.timeline-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  margin-bottom: 1em;
+}
+
+/* Default arrow (pointing down) */
+#toggle-arrow {
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+/* Rotated arrow when timeline is collapsed */
+.timeline.collapsed #toggle-arrow {
+  transform: rotate(90deg);
+}
+
+.timeline-body {
+  max-height: 1000px; /* large enough to contain all content */
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.timeline.collapsed .timeline-body {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
