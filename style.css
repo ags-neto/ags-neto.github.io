@@ -11,8 +11,8 @@ body {
 }
 
 /* ============================
-     CUSTOM HEADER STYLES ONLY
-     ============================ */
+   CUSTOM HEADER STYLES ONLY
+   ============================ */
 
 .site-header {
   background-color: #0d1117;
@@ -58,8 +58,8 @@ body {
 }
 
 /* ============================
-      PROFILE CARD BOX
-      ============================ */
+   PROFILE CARD BOX
+   ============================ */
 .profile-card {
   background-color: #0d1117;
   color: #fff;
@@ -92,7 +92,6 @@ body {
   font-size: 0.9em;
 }
 
-
 .social-icons {
   margin-left: 10em;
 }
@@ -103,7 +102,7 @@ body {
   height: 32px;
   border: 1px solid #44494f;
   border-radius: 6px;
-  margin-left: 0.0em;
+  margin-left: 0em;
   transition: background-color 0.3s, filter 0.3s;
   overflow: hidden; /* ensures image doesn't overflow */
   padding: 0; /* remove padding so the image fills the square */
@@ -120,4 +119,48 @@ body {
   display: block;
   object-fit: contain;
   background-color: #0d1117; /* same as site background */
+}
+
+/* ============================
+   TECH ICONS
+   ============================ */
+.tech-stack {
+  background-color: #0d1117;
+  color: #ffffff;
+  font-family: monospace;
+  max-width: 500px;
+  margin: 2em auto;
+  padding: 1.5em;
+  text-align: left;
+}
+
+.tech-stack h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+  justify-content: center;
+  align-items: center;
+  gap: 2em 2em;
+  max-width: 100%;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+.tech-icons img {
+  height: 40px;
+  width: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s, transform 0.2s;
+}
+
+.tech-icons img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
 }
