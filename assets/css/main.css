@@ -4,7 +4,7 @@
  * Created Date: Sunday April 6th 2025
  * Author: Andre Neto
  * -----
- * Last Modified: Tue Apr 08 2025
+ * Last Modified: Wed Apr 09 2025
  * Modified By: Andre Neto
  */
 
@@ -20,9 +20,39 @@ body {
   padding: 0;
 }
 
+h1, h2, h3 {
+  font-weight: bold;
+  margin: 0.5em 0 0.2em 0;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.0em;
+}
+
+p {
+  padding: 0 0 0.2em 0;
+  margin: 0.2em 0 0.4em 0;
+  line-height: 1.3em;
+}
+
 ul {
-  list-style-position: outside; /* or 'inside' */
-  padding-left: 1.5em; /* increase to push text further from bullet */
+  margin: -0.0em 0 0 0;
+  list-style-position: outside;
+  padding-left: 1.5em;
+}
+
+.location {
+  margin: 0 0 0em 0;
+  color: #999;
+  font-size: 0.85em;
 }
 
 /* ============================
@@ -31,6 +61,7 @@ ul {
 
 .site-header {
   padding: 2em 0;
+  margin: 0 auto 2em auto;
 }
 
 .navbar {
@@ -114,7 +145,7 @@ ul {
   border-radius: 8px;
   padding: 1.5em;
   max-width: 700px;
-  margin: 2em auto;
+  margin: 0em auto 2em auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   font-family: monospace;
   display: flex;
@@ -124,40 +155,30 @@ ul {
 }
 
 .profile-content {
-  max-width: 75%;
-}
-
-.profile-content h2 {
-  margin: 0 0 0.2em;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.location {
-  margin: 0 0 1em;
-  color: #8b949e;
-  font-size: 0.9em;
+  max-width: 80%;
 }
 
 .social-icons {
-  margin-left: 5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-left: auto; /* Alinha à direita no .profile-card */
+  justify-content: flex-end;
 }
 
 .social-icons a {
   display: inline-block;
-  height: 32px;
+  height: 48px;
   width: auto;
   border: 1px solid #44494f;
   border-radius: 6px;
-  margin-left: 0em;
   transition: background-color 0.3s, filter 0.3s;
   overflow: hidden; /* ensures image doesn't overflow */
-  padding: 0; /* remove padding so the image fills the square */
 }
 
 .social-icons a:hover {
   background-color: #21262d;
-  filter: brightness(0.8);
+  filter: brightness(0.6);
 }
 
 .social-icons img {
@@ -165,7 +186,7 @@ ul {
   height: 100%;
   display: block;
   object-fit: contain;
-  background-color: #0d1117; /* same as site background */
+  background-color: #0d1117;
 }
 
 /* ============================
@@ -177,29 +198,11 @@ ul {
   color: #ffffff;
   font-family: monospace;
   max-width: 700px;
-  margin: 2em auto;
-  padding: 1em;
+  margin: 0em auto 2em auto;
+  padding: 0em;
   text-align: left;
 }
 
-.tech-stack h2 {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 1em;
-}
-
-.tech-icons {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 1em;
-  justify-content: center;
-  align-items: center;
-  gap: 2em 2em;
-  max-width: 100%;
-  padding: 0 1em;
-  box-sizing: border-box;
-}
 
 .tech-icons {
   display: flex;
@@ -215,7 +218,7 @@ ul {
 
 .tech-icons img:hover {
   filter: grayscale(0%);
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 /* ============================
@@ -257,13 +260,12 @@ ul {
 
 /* ============================
    TIMELINE STYLES
-   ============================ *
-   */
+   ============================ */
 
 .timeline {
   position: relative;
   max-width: 700px;
-  margin: 0 auto 0em auto;
+  margin: 0 auto 2em auto;
   padding: 0 0em;
   font-family: monospace;
   text-align: left;
@@ -280,24 +282,17 @@ ul {
 .timeline-line {
   position: absolute;
   top: 1.5em;
-  bottom: 3.5em;
+  bottom: 2.7em;
   left: 12px;
   width: 2px;
   background-color: #ccc;
   z-index: 0;
 }
 
-.timeline h2 {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 1em;
-}
-
 /* Cada item da timeline */
 .timeline-item {
   position: relative;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   padding-left: 3em;
 }
 
@@ -317,24 +312,6 @@ ul {
 /* Conteúdo */
 .timeline-content {
   color: #ddd;
-}
-
-.timeline-content h3 {
-  margin: 1.5em 0 0.5em;
-  font-weight: bold;
-  font-size: 1em;
-}
-
-.timeline-content .period {
-  display: block;
-  color: #999;
-  font-size: 0.85em;
-  margin-bottom: 0.5em;
-}
-
-.timeline-content p {
-  margin: 0;
-  line-height: 1.5;
 }
 
 .company {
