@@ -1,43 +1,49 @@
-/*
- * Filename: main.css
- * Path: /home/netoa/Desktop/ags-neto/assets/css
- * Created Date: Sunday April 6th 2025
- * Author: Andre Neto
- * -----
- * Last Modified: Thu Apr 10 2025
- * Modified By: Andre Neto
- */
+:root {
+  --bg-color: #0d1117;
+  --text-color: #ffffff;
+  --muted-text: #999;
+  --link-color: #58a6ff;
+  --border-color: #30363d;
+  --hover-bg: #21262d;
+  --accent-color: #00a0b5;
+  --timeline-line: #ccc;
+  --timeline-marker: #00a0b5;
+  --tech-label: #aaa;
+}
+
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #0d1117;
+  --muted-text: #444;
+  --link-color: #0066cc;
+  --border-color: #d0d7de;
+  --hover-bg: #f0f0f0;
+  --accent-color: #007c91;
+  --timeline-line: #999;
+  --timeline-marker: #007c91;
+  --tech-label: #444;
+}
 
 /* ============================
    GLOBAL STYLES
    ============================ */
 
 body {
-  background-color: #0d1117;
-  color: #ffffff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: monospace;
   margin: 0;
   padding: 0;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-weight: bold;
   margin: 0.5em 0 0.2em 0;
 }
 
-h1 {
-  font-size: 1.5em;
-}
-
-h2 {
-  font-size: 1.2em;
-}
-
-h3 {
-  font-size: 1em;
-}
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.2em; }
+h3 { font-size: 1em; }
 
 p {
   padding: 0 0 0.2em 0;
@@ -46,14 +52,14 @@ p {
 }
 
 ul {
-  margin: -0em 0 0 0;
+  margin: 0;
   list-style-position: outside;
   padding-left: 1.5em;
 }
 
 .location {
-  margin: 0 0 0em 0;
-  color: #999;
+  margin: 0;
+  color: var(--muted-text);
   font-size: 0.85em;
 }
 
@@ -74,8 +80,7 @@ ul {
   align-items: center;
 }
 
-.navbar-left,
-.navbar-right {
+.navbar-left, .navbar-right {
   font-family: monospace;
 }
 
@@ -86,7 +91,7 @@ ul {
 
 .navbar-link,
 .navbar-center a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   font-family: monospace;
   transition: color 0.3s;
@@ -94,7 +99,7 @@ ul {
 
 .navbar-link:hover,
 .navbar-center a:hover {
-  color: #ccc;
+  color: var(--muted-text);
   text-decoration: underline;
 }
 
@@ -112,16 +117,16 @@ ul {
 
 .site-footer {
   text-align: center;
-  color: #ffffff;
+  color: var(--text-color);
   font-family: monospace;
   font-size: 0.9em;
   margin-top: 4em;
   padding: 2em 1em;
-  background-color: #0d1117;
+  background-color: var(--bg-color);
 }
 
 .site-footer a {
-  color: #58a6ff;
+  color: var(--link-color);
   text-decoration: none;
 }
 
@@ -131,9 +136,9 @@ ul {
 
 .site-footer hr {
   max-width: 700px;
-  margin: 0 auto 1.5em auto; /* center and add spacing below */
+  margin: 0 auto 1.5em auto;
   border: none;
-  border-top: 1px solid #2c2c2c;
+  border-top: 1px solid var(--border-color);
 }
 
 /* ============================
@@ -141,13 +146,14 @@ ul {
    ============================ */
 
 .profile-card {
-  background-color: #0d1117;
-  color: #fff;
-  border: 1px solid #30363d;
+  position: relative;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1.5em;
   max-width: 700px;
-  margin: 0em auto 2em auto;
+  margin: 0 auto 2em auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   font-family: monospace;
   display: flex;
@@ -164,7 +170,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
-  margin-left: auto; /* Alinha à direita no .profile-card */
+  margin-left: auto;
   justify-content: flex-end;
 }
 
@@ -172,14 +178,14 @@ ul {
   display: inline-block;
   height: 48px;
   width: auto;
-  border: 1px solid #44494f;
+  border: 1px solid var(--border-color);
   border-radius: 6px;
   transition: background-color 0.3s, filter 0.3s;
-  overflow: hidden; /* ensures image doesn't overflow */
+  overflow: hidden;
 }
 
 .social-icons a:hover {
-  background-color: #21262d;
+  background-color: var(--hover-bg);
   filter: brightness(0.6);
 }
 
@@ -188,7 +194,7 @@ ul {
   height: 100%;
   display: block;
   object-fit: contain;
-  background-color: #0d1117;
+  background-color: var(--bg-color);
 }
 
 /* ============================
@@ -196,12 +202,12 @@ ul {
    ============================ */
 
 .tech-stack {
-  background-color: #0d1117;
-  color: #ffffff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: monospace;
   max-width: 700px;
-  margin: 0em auto 2em auto;
-  padding: 0em;
+  margin: 0 auto 2em auto;
+  padding: 0;
   text-align: left;
 }
 
@@ -211,8 +217,7 @@ ul {
   margin-top: 1.5em;
   justify-content: center;
   align-items: center;
-  gap: 2em 2em;
-  max-width: 100%;
+  gap: 2em;
   padding: 0 1em;
   box-sizing: border-box;
 }
@@ -221,10 +226,6 @@ ul {
   filter: grayscale(0%);
   transform: scale(1.2);
 }
-
-/* ============================
-    TECH ITEM WITH LABEL ON HOVER
-    ============================ */
 
 .tech-item {
   display: flex;
@@ -247,7 +248,7 @@ ul {
 
 .tech-label {
   font-size: 0.75em;
-  color: #aaa;
+  color: var(--tech-label);
   margin-top: 0.4em;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -267,56 +268,51 @@ ul {
   position: relative;
   max-width: 700px;
   margin: 0 auto 2em auto;
-  padding: 0 0em;
+  padding: 0;
   font-family: monospace;
   text-align: left;
 }
 
-/* Flex column container holds line + content */
 .timeline-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-/* Vertical line adapts to content height */
 .timeline-line {
   position: absolute;
   top: 1.5em;
   bottom: 2.7em;
   left: 12px;
   width: 2px;
-  background-color: #ccc;
+  background-color: var(--timeline-line);
   z-index: 0;
 }
 
-/* Cada item da timeline */
 .timeline-item {
   position: relative;
   margin-bottom: 2em;
   padding-left: 3em;
 }
 
-/* Marcador apenas em cada novo item */
 .timeline-marker {
   position: absolute;
   left: 5px;
   top: 0.4em;
   width: 12px;
   height: 12px;
-  background-color: #00a0b5;
-  border: 2px solid #ffffff;
+  background-color: var(--timeline-marker);
+  border: 2px solid var(--text-color);
   border-radius: 50%;
   z-index: 1;
 }
 
-/* Conteúdo */
 .timeline-content {
-  color: #ddd;
+  color: var(--text-color);
 }
 
 .company {
-  color: #00b1c8;
+  color: var(--accent-color);
   font-weight: bold;
   text-decoration: none;
 }
@@ -326,7 +322,7 @@ ul {
 }
 
 .subhref {
-  color: #5cdbec;
+  color: var(--link-color);
   font-weight: bold;
   text-decoration: none;
 }
@@ -343,20 +339,18 @@ ul {
   margin-bottom: 1em;
 }
 
-/* Default arrow (pointing down) */
 #toggle-arrow {
   display: inline-block;
   transform: rotate(0deg);
   transition: transform 0.3s ease;
 }
 
-/* Rotated arrow when timeline is collapsed */
 .timeline.collapsed #toggle-arrow {
   transform: rotate(90deg);
 }
 
 .timeline-body {
-  max-height: 1000px; /* large enough to contain all content */
+  max-height: 1000px;
   opacity: 1;
   overflow: hidden;
   transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -371,64 +365,65 @@ ul {
 /* ============================
    ZIGZAG TIMELINE STYLES
    ============================ */
-   .zigzag-timeline {
-    position: relative;
-    width: 100%;
-    max-width: 700px;
-    margin: 0em auto 2em auto;
-    padding: 1.5em;
-  }
 
-  .zigzag-timeline__item {
-    position: relative;
-    width: 100%;
-    border-bottom: 1px solid #9ca3af;
-    padding: 2em 0;
-  }
+.zigzag-timeline {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1.5em 0 0 0;
+}
 
-  .zigzag-timeline__milestone {
-    position: absolute;
-    top: 50%;
-    border-radius: 50%;
-    height: 1.8rem;
-    width: 1.8rem;
-    background: #9ca3af;
-    color: #0d1117;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9rem;
-    font-weight: bold;
-    z-index: 1;
-  }
+.zigzag-timeline__item {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid var(--tech-label);
+  padding: 2em 0;
+}
 
-  .zigzag-timeline__item:nth-child(2n+1) {
-    border-left: 1px solid #9ca3af;
-    text-align: left;
-    padding-left: 2.5em;
-  }
+.zigzag-timeline__milestone {
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  height: 1.8rem;
+  width: 1.8rem;
+  background: var(--tech-label);
+  color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  z-index: 1;
+}
 
-  .zigzag-timeline__item:nth-child(2n+1) .zigzag-timeline__milestone {
-    left: 0;
-    transform: translate(-50%, -50%);
-  }
+.zigzag-timeline__item:nth-child(2n + 1) {
+  border-left: 1px solid var(--tech-label);
+  text-align: left;
+  padding-left: 2.5em;
+}
 
-  .zigzag-timeline__item:nth-child(2n) {
-    border-right: 1px solid #9ca3af;
-    text-align: right;
-    padding-right: 2.5em;
-  }
+.zigzag-timeline__item:nth-child(2n + 1) .zigzag-timeline__milestone {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
 
-  .zigzag-timeline__item:nth-child(2n) .zigzag-timeline__milestone {
-    right: 0;
-    transform: translate(50%, -50%);
-  }
+.zigzag-timeline__item:nth-child(2n) {
+  border-right: 1px solid var(--tech-label);
+  text-align: right;
+  padding-right: 2.5em;
+}
 
-  .zigzag-timeline__content {
-    display: inline-block;
-    background-color: transparent;
-    color: #c9d1d9;
-    padding: 1em;
-    border-radius: 6px;
-    max-width: 91%;
-  }
+.zigzag-timeline__item:nth-child(2n) .zigzag-timeline__milestone {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.zigzag-timeline__content {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--text-color);
+  padding: 1em;
+  border-radius: 6px;
+  max-width: 91%;
+}
