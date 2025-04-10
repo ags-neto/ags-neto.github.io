@@ -24,26 +24,37 @@
   --tech-label: #444;
 }
 
+
 /* ============================
    GLOBAL STYLES
    ============================ */
 
 body {
-  background-color: var(--bg-color);
+  background-color: #0d1117;
   color: var(--text-color);
   font-family: monospace;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: bold;
   margin: 0.5em 0 0.2em 0;
 }
 
-h1 { font-size: 1.5em; }
-h2 { font-size: 1.2em; }
-h3 { font-size: 1em; }
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
+}
 
 p {
   padding: 0 0 0.2em 0;
@@ -52,14 +63,14 @@ p {
 }
 
 ul {
-  margin: 0;
+  margin: -0em 0 0 0;
   list-style-position: outside;
   padding-left: 1.5em;
 }
 
 .location {
-  margin: 0;
-  color: var(--muted-text);
+  margin: 0 0 0em 0;
+  color: #999;
   font-size: 0.85em;
 }
 
@@ -80,7 +91,8 @@ ul {
   align-items: center;
 }
 
-.navbar-left, .navbar-right {
+.navbar-left,
+.navbar-right {
   font-family: monospace;
 }
 
@@ -91,7 +103,7 @@ ul {
 
 .navbar-link,
 .navbar-center a {
-  color: var(--text-color);
+  color: #fff;
   text-decoration: none;
   font-family: monospace;
   transition: color 0.3s;
@@ -99,7 +111,7 @@ ul {
 
 .navbar-link:hover,
 .navbar-center a:hover {
-  color: var(--muted-text);
+  color: #ccc;
   text-decoration: underline;
 }
 
@@ -117,16 +129,16 @@ ul {
 
 .site-footer {
   text-align: center;
-  color: var(--text-color);
+  color: #ffffff;
   font-family: monospace;
   font-size: 0.9em;
   margin-top: 4em;
   padding: 2em 1em;
-  background-color: var(--bg-color);
+  background-color: #0d1117;
 }
 
 .site-footer a {
-  color: var(--link-color);
+  color: #58a6ff;
   text-decoration: none;
 }
 
@@ -136,9 +148,9 @@ ul {
 
 .site-footer hr {
   max-width: 700px;
-  margin: 0 auto 1.5em auto;
+  margin: 0 auto 1.5em auto; /* center and add spacing below */
   border: none;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid #2c2c2c;
 }
 
 /* ============================
@@ -147,13 +159,13 @@ ul {
 
 .profile-card {
   position: relative;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  border: 1px solid var(--border-color);
+  background-color: #0d1117;
+  color: #ffffff;
+  border: 1px solid #30363d;
   border-radius: 8px;
   padding: 1.5em;
   max-width: 700px;
-  margin: 0 auto 2em auto;
+  margin: 0em auto 2em auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   font-family: monospace;
   display: flex;
@@ -170,7 +182,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
-  margin-left: auto;
+  margin-left: auto; /* Alinha à direita no .profile-card */
   justify-content: flex-end;
 }
 
@@ -178,14 +190,14 @@ ul {
   display: inline-block;
   height: 48px;
   width: auto;
-  border: 1px solid var(--border-color);
+  border: 1px solid #44494f;
   border-radius: 6px;
   transition: background-color 0.3s, filter 0.3s;
-  overflow: hidden;
+  overflow: hidden; /* ensures image doesn't overflow */
 }
 
 .social-icons a:hover {
-  background-color: var(--hover-bg);
+  background-color: #21262d;
   filter: brightness(0.6);
 }
 
@@ -194,7 +206,7 @@ ul {
   height: 100%;
   display: block;
   object-fit: contain;
-  background-color: var(--bg-color);
+  background-color: #0d1117;
 }
 
 /* ============================
@@ -202,12 +214,12 @@ ul {
    ============================ */
 
 .tech-stack {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: #0d1117;
+  color: #ffffff;
   font-family: monospace;
   max-width: 700px;
-  margin: 0 auto 2em auto;
-  padding: 0;
+  margin: 0em auto 2em auto;
+  padding: 0em;
   text-align: left;
 }
 
@@ -217,7 +229,8 @@ ul {
   margin-top: 1.5em;
   justify-content: center;
   align-items: center;
-  gap: 2em;
+  gap: 2em 2em;
+  max-width: 100%;
   padding: 0 1em;
   box-sizing: border-box;
 }
@@ -226,6 +239,10 @@ ul {
   filter: grayscale(0%);
   transform: scale(1.2);
 }
+
+/* ============================
+    TECH ITEM WITH LABEL ON HOVER
+    ============================ */
 
 .tech-item {
   display: flex;
@@ -248,7 +265,7 @@ ul {
 
 .tech-label {
   font-size: 0.75em;
-  color: var(--tech-label);
+  color: #aaa;
   margin-top: 0.4em;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -268,51 +285,56 @@ ul {
   position: relative;
   max-width: 700px;
   margin: 0 auto 2em auto;
-  padding: 0;
+  padding: 0 0em;
   font-family: monospace;
   text-align: left;
 }
 
+/* Flex column container holds line + content */
 .timeline-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
+/* Vertical line adapts to content height */
 .timeline-line {
   position: absolute;
   top: 1.5em;
   bottom: 2.7em;
   left: 12px;
   width: 2px;
-  background-color: var(--timeline-line);
+  background-color: #ccc;
   z-index: 0;
 }
 
+/* Cada item da timeline */
 .timeline-item {
   position: relative;
   margin-bottom: 2em;
   padding-left: 3em;
 }
 
+/* Marcador apenas em cada novo item */
 .timeline-marker {
   position: absolute;
   left: 5px;
   top: 0.4em;
   width: 12px;
   height: 12px;
-  background-color: var(--timeline-marker);
-  border: 2px solid var(--text-color);
+  background-color: #00a0b5;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   z-index: 1;
 }
 
+/* Conteúdo */
 .timeline-content {
-  color: var(--text-color);
+  color: #ddd;
 }
 
 .company {
-  color: var(--accent-color);
+  color: #00b1c8;
   font-weight: bold;
   text-decoration: none;
 }
@@ -322,7 +344,7 @@ ul {
 }
 
 .subhref {
-  color: var(--link-color);
+  color: #5cdbec;
   font-weight: bold;
   text-decoration: none;
 }
@@ -339,18 +361,20 @@ ul {
   margin-bottom: 1em;
 }
 
+/* Default arrow (pointing down) */
 #toggle-arrow {
   display: inline-block;
   transform: rotate(0deg);
   transition: transform 0.3s ease;
 }
 
+/* Rotated arrow when timeline is collapsed */
 .timeline.collapsed #toggle-arrow {
   transform: rotate(90deg);
 }
 
 .timeline-body {
-  max-height: 1000px;
+  max-height: 1000px; /* large enough to contain all content */
   opacity: 1;
   overflow: hidden;
   transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -369,16 +393,17 @@ ul {
 .zigzag-timeline {
   position: relative;
   width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 670px;
+  margin: 0 auto 0 auto;
   padding: 1.5em 0 0 0;
 }
 
 .zigzag-timeline__item {
   position: relative;
   width: 100%;
-  border-bottom: 1px solid var(--tech-label);
-  padding: 2em 0;
+  border-bottom: 1px solid #9ca3af;
+  padding: 2em 0em 2em 0em;
+  margin: 0 0em 0 -1.25em;
 }
 
 .zigzag-timeline__milestone {
@@ -387,8 +412,8 @@ ul {
   border-radius: 50%;
   height: 1.8rem;
   width: 1.8rem;
-  background: var(--tech-label);
-  color: var(--bg-color);
+  background: #9ca3af;
+  color: #0d1117;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -398,7 +423,7 @@ ul {
 }
 
 .zigzag-timeline__item:nth-child(2n + 1) {
-  border-left: 1px solid var(--tech-label);
+  border-left: 1px solid #9ca3af;
   text-align: left;
   padding-left: 2.5em;
 }
@@ -409,7 +434,7 @@ ul {
 }
 
 .zigzag-timeline__item:nth-child(2n) {
-  border-right: 1px solid var(--tech-label);
+  border-right: 1px solid #9ca3af;
   text-align: right;
   padding-right: 2.5em;
 }
@@ -422,7 +447,7 @@ ul {
 .zigzag-timeline__content {
   display: inline-block;
   background-color: transparent;
-  color: var(--text-color);
+  color: #ffffff;
   padding: 1em;
   border-radius: 6px;
   max-width: 91%;
