@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -18,14 +18,13 @@
 
             <ul class="navbar-center">
                 <li><u>About me</u></li>
-                <li><a href="#work">My work</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#posts">Papers</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="../work/">My work</a></li>
+                <li><a href="../projects/">Projects</a></li>
+                <li><a href="../contact/">Contact me</a></li>
             </ul>
 
             <div class="navbar-right">
-                <a href="../../pt/about/" class="navbar-link bold-link">Portuguese</a>
+                <a href="../../pt/about/" class="navbar-link bold-link">Português</a>
             </div>
 
         </nav>
@@ -233,19 +232,6 @@
         <hr>
         &copy 2025 André Neto | <a href="mailto:email@ags-neto.com">email@ags-neto.com</a>
     </footer>
-
-    <script>
-    const toggleTheme = () => {
-        const current = document.documentElement.getAttribute('data-theme');
-        const next = current === 'light' ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-    };
-
-    // On page load
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    </script>
 
 </body>
 </html>
