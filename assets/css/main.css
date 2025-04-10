@@ -4,7 +4,7 @@
  * Created Date: Sunday April 6th 2025
  * Author: Andre Neto
  * -----
- * Last Modified: Wed Apr 09 2025
+ * Last Modified: Thu Apr 10 2025
  * Modified By: Andre Neto
  */
 
@@ -20,7 +20,9 @@ body {
   padding: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: bold;
   margin: 0.5em 0 0.2em 0;
 }
@@ -34,7 +36,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.0em;
+  font-size: 1em;
 }
 
 p {
@@ -44,7 +46,7 @@ p {
 }
 
 ul {
-  margin: -0.0em 0 0 0;
+  margin: -0em 0 0 0;
   list-style-position: outside;
   padding-left: 1.5em;
 }
@@ -202,7 +204,6 @@ ul {
   padding: 0em;
   text-align: left;
 }
-
 
 .tech-icons {
   display: flex;
@@ -366,3 +367,68 @@ ul {
   opacity: 0;
   pointer-events: none;
 }
+
+/* ============================
+   ZIGZAG TIMELINE STYLES
+   ============================ */
+   .zigzag-timeline {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0em auto 2em auto;
+    padding: 1.5em;
+  }
+
+  .zigzag-timeline__item {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #9ca3af;
+    padding: 2em 0;
+  }
+
+  .zigzag-timeline__milestone {
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    height: 1.8rem;
+    width: 1.8rem;
+    background: #9ca3af;
+    color: #0d1117;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    z-index: 1;
+  }
+
+  .zigzag-timeline__item:nth-child(2n+1) {
+    border-left: 1px solid #9ca3af;
+    text-align: left;
+    padding-left: 2.5em;
+  }
+
+  .zigzag-timeline__item:nth-child(2n+1) .zigzag-timeline__milestone {
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .zigzag-timeline__item:nth-child(2n) {
+    border-right: 1px solid #9ca3af;
+    text-align: right;
+    padding-right: 2.5em;
+  }
+
+  .zigzag-timeline__item:nth-child(2n) .zigzag-timeline__milestone {
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+
+  .zigzag-timeline__content {
+    display: inline-block;
+    background-color: transparent;
+    color: #c9d1d9;
+    padding: 1em;
+    border-radius: 6px;
+    max-width: 91%;
+  }
