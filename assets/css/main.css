@@ -9,7 +9,7 @@
   --timeline-line: #cccccc;
   --timeline-marker: #00a0b5;
   --tech-label: #aaaaaa;
-  --shadow-color: #4c327c33;
+  --shadow-color: #00a0b541;
 }
 
 [data-theme="light"] {
@@ -154,7 +154,7 @@ a:hover {
 }
 
 .site-footer a {
-  color: var(--link-color);
+  color: var(--accent-color);
   text-decoration: none;
 }
 
