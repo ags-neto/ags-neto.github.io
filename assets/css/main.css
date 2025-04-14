@@ -31,6 +31,10 @@ h3 {
   font-size: 1em;
 }
 
+p {
+  line-height: 16px;
+}
+
 ul {
   padding-left: 1.5em;
 }
@@ -249,18 +253,13 @@ a:hover {
    ============================ */
 
 .zigzag-timeline {
-  position: relative;
-  width: 100%;
   margin: 0 auto 0 auto;
-  padding: 1.5em 0 0 0;
 }
 
 .zigzag-timeline__item {
   position: relative;
-  width: 100%;
   border-bottom: 1px solid var(--border-color);
   padding: 2em 0em 2em 0em;
-  margin: 0 0em 0 -1.25em;
 }
 
 .zigzag-timeline__milestone {
