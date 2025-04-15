@@ -56,7 +56,7 @@ a:hover {
 }
 
 .container {
-  max-width:  min(80%, 200ch);
+  max-width:  min(80%, 100ch);
   margin: 0 auto 0 auto;
   padding: 2em 0 0 0;
   box-sizing: border-box;
@@ -221,7 +221,7 @@ a:hover {
 /* Marcador apenas em cada novo item */
 .timeline-marker {
   position: absolute;
-  left: 0.5em;
+  left: 0.54em;
   top: 0.4em;
   width: 12px;
   height: 12px;
