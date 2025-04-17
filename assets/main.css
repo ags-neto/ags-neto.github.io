@@ -225,7 +225,7 @@ a:hover {
   top: 0.4em;
   width: 12px;
   height: 12px;
-  box-shadow: 0 0 5px 1px var(--contrast-color);
+  box-shadow: 0 0 6px 1px var(--contrast-color);
 
   background-color: var(--contrast-color);
   border: 4px solid var(--muted-text-color);
@@ -236,16 +236,6 @@ a:hover {
 .timeline-header {
   cursor: pointer;
   margin-bottom: 1em;
-}
-
-/* Default arrow (pointing down) */
-#toggle-arrow {
-  transform: rotate(0deg);
-}
-
-/* Rotated arrow when timeline is collapsed */
-.timeline.collapsed #toggle-arrow {
-  transform: rotate(90deg);
 }
 
 .timeline-body {
@@ -259,6 +249,17 @@ a:hover {
   opacity: 0;
   pointer-events: none;
 }
+
+.toggle-arrow {
+  display: inline-block;
+  transition: transform 0.4s
+}
+
+/* Rotate when timeline is collapsed */
+.timeline.collapsed .toggle-arrow {
+  transform: scaleY(-1);
+}
+
 
 /* ============================
    ZIGZAG TIMELINE STYLES
@@ -283,7 +284,7 @@ a:hover {
   background: var(--muted-text-color);
   display: flex;
   align-items: center;
-  box-shadow: 0 0 20px -5px var(--contrast-color);
+  box-shadow: 0 0 20px 0px var(--contrast-color);
   justify-content: center;
   font-size: 1rem;
   font-weight: bold;
