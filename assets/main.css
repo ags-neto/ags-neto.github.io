@@ -17,18 +17,18 @@ body {
 }
 
 h1 {
-  font-size: 1.5em;
-  margin: 0.5em 0 0.2em 0;
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0.2rem 0;
 }
 
 h2 {
-  margin: 0.3em 0 0.2em 0;
-  font-size: 1.2em;
+  margin: 0.3rem 0 0.2rem 0;
+  font-size: 1.2rem;
 }
 
 h3 {
-  margin: 0.1em 0 0.2em 0;
-  font-size: 1em;
+  margin: 0.1rem 0 0.2rem 0;
+  font-size: 1rem;
 }
 
 p {
@@ -36,7 +36,7 @@ p {
 }
 
 ul {
-  padding-left: 1.5em;
+  padding-left: 1.5rem;
 }
 
 a {
@@ -58,14 +58,14 @@ a:hover {
 .container {
   max-width:  min(80%, 100ch);
   margin: 0 auto 0 auto;
-  padding: 2em 0 0 0;
+  padding: 2rem 0 0 0;
   box-sizing: border-box;
 }
 
 .location {
   margin: 0 0 0 0;
   color: var(--muted-text-color);
-  font-size: 0.85em;
+  font-size: 0.85rem;
 }
 
 /* ============================
@@ -76,8 +76,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 0 4em 0;
-  gap: 1em;
+  padding: 1rem 0 4rem 0;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -105,19 +105,19 @@ a:hover {
 .profile-card {
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  padding: 1.5em;
+  padding: 1.5rem;
   box-shadow: 0 0 40px -20px var(--contrast-color);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 1em;
+  gap: 1rem;
 }
 
 .social-icons {
   display: grid;
   grid-template-columns: 1fr;
   flex-wrap: wrap;
-  gap: 0.5em;
+  gap: 0.5rem;
   margin-left: auto;
   justify-content: flex-end;
 }
@@ -146,8 +146,8 @@ a:hover {
 .tech-icons {
   display: flex;
   flex-wrap: wrap;
-  margin: 1.5em 0 0 0;
-  gap: 2em;
+  margin: 1.5rem 0 0 0;
+  gap: 2rem;
   justify-content: center;
   max-width: 100%;
 }
@@ -181,7 +181,7 @@ a:hover {
 }
 
 .tech-label {
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -204,9 +204,9 @@ a:hover {
 /* Vertical line adapts to content height */
 .timeline-line {
   position: absolute;
-  top: 1.5em;
-  bottom: 2.7em;
-  left: 12px;
+  top: 1rem;
+  bottom: 2.3rem;
+  left: 1rem;
   width: 2px;
   background-color: var(--border-color);
 }
@@ -214,18 +214,18 @@ a:hover {
 /* Cada item da timeline */
 .timeline-item {
   position: relative;
-  margin-bottom: 2em;
-  padding-left: 3em;
+  margin-bottom: 2rem;
+  padding-left: 3rem;
 }
 
 /* Marcador apenas em cada novo item */
 .timeline-marker {
   position: absolute;
-  left: 0.54em;
-  top: 0.4em;
+  left: 0.7rem;
+  top: 0.3rem;
   width: 12px;
   height: 12px;
-  box-shadow: 0 0 6px 1px var(--contrast-color);
+  box-shadow: 0 0 7px 2px var(--contrast-color);
 
   background-color: var(--contrast-color);
   border: 4px solid var(--muted-text-color);
@@ -235,7 +235,7 @@ a:hover {
 /* Conteúdo */
 .timeline-header {
   cursor: pointer;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .timeline-body {
@@ -272,7 +272,7 @@ a:hover {
 .zigzag-timeline__item {
   position: relative;
   border-bottom: 1px solid var(--border-color);
-  padding: 2em 0em 2em 0em;
+  padding: 2rem 0rem 2rem 0rem;
 }
 
 .zigzag-timeline__milestone {
@@ -296,7 +296,7 @@ a:hover {
 .zigzag-timeline__item:nth-child(2n + 1) {
   border-left: 1px solid var(--border-color);
   text-align: left;
-  padding-left: 2.5em;
+  padding-left: 2.5rem;
 }
 
 .zigzag-timeline__item:nth-child(2n + 1) .zigzag-timeline__milestone {
@@ -307,7 +307,7 @@ a:hover {
 .zigzag-timeline__item:nth-child(2n) {
   border-right: 1px solid var(--border-color);
   text-align: right;
-  padding-right: 2.5em;
+  padding-right: 2.5rem;
 }
 
 .zigzag-timeline__item:nth-child(2n) .zigzag-timeline__milestone {
@@ -318,7 +318,7 @@ a:hover {
 .zigzag-timeline__content {
   display: inline-block;
   background-color: transparent;
-  padding: 1em;
+  padding: 1rem;
   border-radius: 6px;
   max-width: 91%;
 }
@@ -329,12 +329,14 @@ a:hover {
 
 .site-footer {
   text-align: center;
-  margin-top: 4em;
-  padding: 2em 1em;
+  margin-top: 4rem;
+  padding: 2rem 1rem;
 }
 
 .site-footer hr {
-  margin: 0 auto 1em auto;
+  margin: 0 auto 1rem auto;
   border: none;
   border-top: 2px solid var(--border-color);
 }
+
+/* =========================== */

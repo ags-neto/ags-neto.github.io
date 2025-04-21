@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>André Neto</title>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      try {
-        const lang = navigator.language || navigator.userLanguage;
-        if (lang && lang.toLowerCase().startsWith("pt")) {
-          window.location.replace("/pt/");
-        } else {
-          window.location.replace("/en/");
-        }
-      } catch (e) {
-        // Fallback if navigator.language fails
-        window.location.replace("/en/");
-      }
-    });
-  </script>
-  <noscript>
-    <meta http-equiv="refresh" content="0; url=/en/">
-  </noscript>
+	<meta charset="UTF-8">
+	<title>André Neto</title>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			try {
+				const lang = navigator.language || navigator.userLanguage;
+				if (lang && lang.toLowerCase().startsWith("pt")) {
+					window.location.replace("/pt/");
+				} else {
+					window.location.replace("/en/");
+				}
+			} catch (e) {
+				// Fallback if navigator.language fails
+				window.location.replace("/en/");
+			}
+		});
+	</script>
+	<noscript>
+		<meta http-equiv="refresh" content="0; url=/en/">
+	</noscript>
 </head>
+
 <body>
 </body>
+
 </html>
