@@ -39,6 +39,10 @@ ul {
   padding-left: 1.5rem;
 }
 
+li {
+  line-height: 16px;
+}
+
 a {
   color: var(--contrast-color);
   text-decoration: none;
@@ -56,7 +60,7 @@ a:hover {
 }
 
 .container {
-  max-width:  min(80%, 100ch);
+  max-width:  min(80%, 90ch);
   margin: 0 auto 0 auto;
   padding: 2rem 0 0 0;
   box-sizing: border-box;
@@ -340,3 +344,102 @@ a:hover {
 }
 
 /* =========================== */
+
+.classes {
+  max-width:  min(80%, 100ch);
+  margin: 0 auto 0 auto;
+  padding: 2rem 0 0 0;
+  box-sizing: border-box;
+}
+
+/* Estrutura geral das secções */
+.classes section {
+	margin-bottom: 4rem;
+}
+
+/* Remover espaço no final */
+.classes section:last-of-type {
+	margin-bottom: 0;
+}
+
+/* Headings */
+.classes h1 {
+	font-size: 2.5rem;
+	margin-top: 2rem;
+	margin-bottom: 1.2rem;
+}
+
+.classes h2 {
+	font-size: 1.8rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.classes h3 {
+	font-size: 1.4rem;
+	margin-top: 1.2rem;
+	margin-bottom: 0.8rem;
+}
+
+.classes h4 {
+	font-size: 1.2rem;
+	margin-top: 1.1rem;
+	margin-bottom: 0.6rem;
+}
+
+
+/* Parágrafos e listas */
+.classes p {
+	font-size: 1rem;
+	line-height: 1.6;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.classes ul {
+	margin-left: 1.5rem;
+	margin-bottom: 1rem;
+	margin-top: 0.5rem;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+.classes li {
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+/* Código inline */
+.classes code {
+	font-family: 'Courier New', monospace;
+	background-color: var(--border-color);
+	padding: 0.2rem 0.4rem;
+	border-radius: 0.3rem;
+	font-size: 0.95rem;
+}
+
+/* Links */
+.classes a:hover {
+	text-decoration: underline;
+}
+
+.navegacao-sessoes {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4rem;
+}
+
+.navegacao-sessoes .botao {
+	padding: 0.6rem 1.2rem;
+	background-color: var(--contrast-color);
+	color: var(--background-color);
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+
+.navegacao-sessoes .botao:hover {
+	background-color: var(--text-color);
+}
