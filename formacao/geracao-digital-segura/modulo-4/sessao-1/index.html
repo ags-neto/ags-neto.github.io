@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Sessão 1">
+	<meta name="author" content="André Neto">
+
+	<title>GDS - M1 - S1</title>
+	<link rel="icon" type="image/png" href="../../../../favicon.png">
+	<link rel="stylesheet" href="../../../../assets/main.css">
+</head>
+
+<body>
+
+	<main class="classes">
+
+		<section class="navegacao-sessoes">
+			<div class="botao-esquerda">
+				<a href="../" class="botao">Voltar</a>
+			</div>
+		</section>
+
+		<h1>Sessão 1: Como Funciona a Internet</h1>
+
+		<section>
+			<h2>1. Introdução</h2>
+			<p>A Internet é uma rede mundial que liga milhões de dispositivos, computadores, smartphones, servidores,
+				permitindo a troca de informação em tempo real. Embora pareça algo "no ar", a Internet depende de
+				infraestruturas físicas e de regras invisíveis que organizam essa comunicação.</p>
+		</section>
+
+		<section>
+			<h2>2. A Estrutura Física da Internet</h2>
+
+			<h3>2.1 Cabos Submarinos</h3>
+			<p>A Internet atravessa oceanos através de cabos submarinos que ligam continentes. Estes cabos, que podem
+				ter mais de 30 mil quilómetros, transportam quase todo o tráfego mundial de dados. Sem eles, não haveria
+				ligação global.</p>
+			<p>Podes explorar o mapa dos cabos em <a href="https://www.submarinecablemap.com" target="_blank">Submarine
+					Cable Map</a>.</p>
+
+			<h3>2.2 Servidores e Data Centers</h3>
+			<p>Os websites, vídeos e serviços online vivem em computadores chamados <strong>servidores</strong>. Estes
+				servidores estão alojados em <strong>data centers</strong>, edifícios preparados para manter milhares de
+				máquinas sempre ligadas, com segurança e arrefecimento.</p>
+
+			<h3>2.3 Como a Internet Chega a Tua Casa</h3>
+			<p>Os fornecedores de Internet (ISP) ligam-te a esta rede global através de cabos de fibra ótica, ADSL ou
+				cabo coaxial. O <strong>router</strong> distribui essa ligação dentro da tua casa, seja por Wi-Fi ou
+				Ethernet.</p>
+		</section>
+
+		<section>
+			<h2>3. O Plano Lógico da Internet</h2>
+			<p>A Internet funciona graças a regras e sistemas que permitem que milhões de dispositivos comuniquem entre
+				si de forma organizada. Vamos perceber o que acontece quando tentas aceder a um site.</p>
+
+			<h3>3.1 Endereços IP e o Protocolo TCP/IP</h3>
+			<p>Cada dispositivo ligado à Internet tem um <strong>endereço IP</strong>, a sua "morada digital". Para
+				garantir que todos comunicam corretamente, existem regras chamadas <strong>protocolos</strong>. O
+				principal é o <strong>TCP/IP</strong>, que define como os dados são enviados e recebidos na rede.</p>
+
+			<h4>3.1.1 Composição de um Endereço IP</h4>
+			<p>O formato mais comum é o <strong>IPv4</strong>, que consiste em quatro grupos de números separados por
+				pontos:</p>
+
+			<p><code>Exemplo: 192.168.1.1</code></p>
+
+			<ul>
+				<li>Cada número varia entre 0 e 255.</li>
+				<li>O IPv4 permite aproximadamente <strong>4,3 mil milhões</strong> de endereços únicos.</li>
+			</ul>
+
+			<p>Devido à limitação de endereços disponíveis, surgiu o <strong>IPv6</strong>, um formato mais recente, com
+				números muito maiores e separados por dois pontos:</p>
+
+			<p><code>Exemplo: 2001:0db8:85a3:0000:0000:8a2e:0370:7334</code></p>
+
+			<ul>
+				<li>O IPv6 permite um número praticamente infinito de endereços (3,4 x 10<sup>38</sup>).</li>
+			</ul>
+
+			<h4>3.1.2 Tipos de IP: Público vs Privado</h4>
+			<ul>
+				<li><strong>IP Público:</strong> É o endereço visível na Internet. É atribuído pelo teu fornecedor de
+					Internet (ISP).</li>
+				<li><strong>IP Privado:</strong> Usado dentro da tua rede doméstica. Exemplo típico:
+					<code>192.168.x.x</code>.</li>
+			</ul>
+
+			<h4>3.1.3 IP Fixo vs Dinâmico</h4>
+			<ul>
+				<li><strong>IP Dinâmico:</strong> A maioria das ligações domésticas usa IPs que mudam periodicamente.
+				</li>
+				<li><strong>IP Fixo:</strong> Empresas ou serviços que precisam de um endereço constante usam IPs
+					estáticos.</li>
+			</ul>
+
+			<p>Certos IPs são reservados, como <code>127.0.0.1</code>, conhecido como "localhost", que aponta sempre
+				para o próprio computador. Podes ver qual o teu IP em <a href="https://whatismyipaddress.com"
+					target="_blank">What Is My IP Address</a>.</p>
+
+			<p>Graças ao sistema de IPs e ao protocolo <strong>TCP/IP</strong>, todos os dispositivos conseguem
+				comunicar entre si, seja numa rede doméstica ou na vasta rede mundial que é a Internet.</p>
+
+			<h3>3.2 DNS, O Tradutor da Internet</h3>
+			<p>Como ninguém decora endereços IP, usamos nomes como <code>google.com</code>. O <strong>DNS</strong>
+				(Domain Name System) traduz esses nomes para o IP correspondente, permitindo que o teu pedido chegue ao
+				servidor certo.</p>
+
+			<h3>3.3 O que é um URL</h3>
+			<p>O <strong>URL</strong> (Uniform Resource Locator) indica exatamente o recurso que queres aceder num
+				servidor.</p>
+			<p>Exemplo:</p>
+			<p><code>https://www.exemplo.com/pasta/pagina.html</code></p>
+			<ul>
+				<li><strong>https://</strong>, Protocolo de comunicação.</li>
+				<li><strong>www.exemplo.com</strong>, Nome do domínio traduzido pelo DNS.</li>
+				<li><strong>/pasta/pagina.html</strong>, Localização específica no servidor.</li>
+			</ul>
+
+			<h3>3.4 HTTP e HTTPS, Como Comunicas com o Site</h3>
+			<p>O protocolo <strong>HTTP</strong> permite a troca de informação entre o teu browser e o servidor. Quando
+				vês <strong>HTTPS</strong>, significa que essa comunicação está encriptada, protegendo os teus dados.
+			</p>
+
+			<h3>3.5 Pacotes de Dados, Como a Informação Viaja</h3>
+			<p>A informação na Internet é dividida em <strong>pacotes</strong>. Cada pacote contém parte da informação,
+				o endereço IP de destino e instruções para ser reconstituído ao chegar. Graças ao protocolo TCP/IP,
+				mesmo que sigam caminhos diferentes, todos os pacotes chegam corretamente ao destino.</p>
+		</section>
+
+
+		<section>
+			<h2>4. A Internet Visível e Oculta</h2>
+
+			<h3>4.1 Surface Web</h3>
+			<p>É a parte da Internet que todos usamos diariamente, acessível através de motores de busca. Inclui sites
+				públicos como o Google, YouTube ou Wikipédia.</p>
+
+			<h3>4.2 Deep Web</h3>
+			<p>A <strong>Deep Web</strong> é composta por conteúdos que não aparecem nas pesquisas: emails, contas
+				bancárias, bases de dados privadas, plataformas escolares, etc. A Deep Web é essencial e legítima, é
+				onde estão os teus dados protegidos por passwords.</p>
+
+			<h3>4.3 Dark Web</h3>
+			<p>A <strong>Dark Web</strong> é uma pequena parte da Deep Web que exige softwares especiais (como o Tor)
+				para aceder. É usada por jornalistas, ativistas e pessoas que precisam de anonimato. No entanto, também
+				é conhecida por alojar mercados ilegais e outras atividades perigosas.</p>
+			<p><strong>Importante:</strong> A Dark Web não deve ser explorada sem conhecimento. Não é um "site secreto",
+				é uma rede paralela que exige responsabilidade.</p>
+		</section>
+
+		<section>
+			<h2>5. Velocidade da Internet e Ligações</h2>
+			<p>Quando contratamos um serviço de Internet, vemos valores como <strong>100 Mbps</strong> ou <strong>1
+					Gbps</strong>. Estes números representam a velocidade máxima teórica de transferência de dados.</p>
+
+			<h3>5.1 Unidades de Velocidade</h3>
+			<ul>
+				<li><strong>Kbps (Kilobits por segundo):</strong> 1 Kbps = 1.000 bits por segundo. Muito lento, usado em
+					tecnologias antigas.</li>
+				<li><strong>Mbps (Megabits por segundo):</strong> 1 Mbps = 1.000 Kbps. Unidade mais comum nas casas.
+				</li>
+				<li><strong>Gbps (Gigabits por segundo):</strong> 1 Gbps = 1.000 Mbps. Fibra ótica avançada.</li>
+				<li><strong>Tbps (Terabits por segundo):</strong> 1 Tbps = 1.000 Gbps. Usado apenas em infraestruturas
+					globais.</li>
+			</ul>
+
+			<p><strong>Nota importante:</strong> A velocidade da Internet é medida em <strong>Megabits</strong>, mas os
+				ficheiros que descarregas são medidos em <strong>Megabytes</strong>. Como 1 byte = 8 bits:</p>
+			<p><code>8 Mbps = 1 MB/s</code></p>
+			<p>Ou seja, se tens uma ligação de 100 Mbps, a tua velocidade máxima real de download será cerca de 12,5
+				Megabytes por segundo.</p>
+
+			<h3>5.2 Fatores que Influenciam a Velocidade</h3>
+			<ul>
+				<li><strong>Tipo de ligação:</strong>
+					<ul>
+						<li><strong>Ethernet:</strong> Mais rápida e estável.</li>
+						<li><strong>Wi-Fi:</strong> Mais prática, mas sujeita a interferências.</li>
+					</ul>
+				</li>
+				<li><strong>Distância ao router</strong></li>
+				<li><strong>Número de dispositivos ligados</strong></li>
+				<li><strong>Limitações do teu equipamento</strong></li>
+			</ul>
+
+			<h3>5.3 Download vs Upload</h3>
+			<p>Nem sempre a velocidade de <strong>download</strong> (receber dados) é igual à de <strong>upload</strong>
+				(enviar dados). Em muitos contratos, o upload é bastante inferior, o que afeta videoconferências ou
+				envio de ficheiros grandes.</p>
+
+			<h3>5.4 Como Testar a Tua Velocidade</h3>
+			<p>Podes usar ferramentas como <a href="https://www.speedtest.net" target="_blank">speedtest.net</a> para
+				verificar a tua velocidade real. Testa sempre por cabo para resultados mais fiáveis.</p>
+		</section>
+
+		<section>
+			<h2>6. Desafio da Sessão</h2>
+			<p>1. Explora o mapa dos cabos submarinos e encontra a ligação de Portugal.</p>
+			<p>2. Faz um teste de velocidade em <a href="https://www.speedtest.net" target="_blank">speedtest.net</a>.
+			</p>
+			<p>3. Pesquisa o teu endereço IP e descobre se estás a usar IPv4 ou IPv6.</p>
+		</section>
+
+		<section class="navegacao-sessoes">
+			<div class="botao-esquerda">
+				<a href="../" class="botao">Voltar</a>
+			</div>
+			<div class="botao-direita">
+				<a href="../sessao-2/" class="botao">Sessão 2: Identidade Digital</a>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="site-footer container">
+		<hr>
+		<p>&copy; <span id="copyright"></span> André Neto</p>
+		<a href="mailto:formacao@ags-neto.com">formacao@ags-neto.com</a>
+	</footer>
+
+	<script>
+		document.getElementById("copyright").innerText = new Date().getFullYear();
+	</script>
+
+</body>
+
+</html>

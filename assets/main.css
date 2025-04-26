@@ -417,6 +417,9 @@ a:hover {
 	padding: 0.2rem 0.4rem;
 	border-radius: 0.3rem;
 	font-size: 0.95rem;
+  white-space: break-spaces;
+	word-break: break-word;
+	overflow-wrap: anywhere;
 }
 
 /* Links */
@@ -427,9 +430,12 @@ a:hover {
 .navegacao-sessoes {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;   /* Allow wrapping */
+	gap: 1rem;         /* Space between buttons when wrapped */
 	margin-top: 4rem;
 }
 
+/* Ensure buttons have a minimum size */
 .navegacao-sessoes .botao {
 	padding: 0.6rem 1.2rem;
 	background-color: var(--contrast-color);
@@ -438,8 +444,26 @@ a:hover {
 	text-decoration: none;
 	border-radius: 4px;
 	font-size: 1rem;
+	text-align: center;
+	min-width: 120px;   /* Prevent buttons from becoming too narrow */
+
+  /* ESSENCIAIS PARA EVITAR OVERLAP */
+  display: inline-block;   /* Ou block, dependendo do layout */
+  white-space: normal;     /* Permite que o texto quebre */
+  word-break: break-word;  /* Força quebra de palavras longas */
+  max-width: 100%;         /* Garante que respeita o container */
+  box-sizing: border-box;  /* Inclui padding no cálculo do tamanho */
 }
 
+/* Hover effect */
 .navegacao-sessoes .botao:hover {
 	background-color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+	.navegacao-sessoes {
+		flex-direction: column;
+    gap: 2rem;
+		align-items: left;  /* Center buttons when stacked */
+	}
 }
