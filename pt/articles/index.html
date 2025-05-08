@@ -33,15 +33,28 @@
 
         <section class="publication-list">
             <article class="publication-item">
-                <h2>Pseudo-MOS Learning: A Hybrid Full-to-No-Reference FIQA Framework</h2>
+                <h2>Aprendizagem por Pseudo-MOS: Uma Framework Híbrida de Avaliação de Qualidade de Imagens Faciais do Tipo Full-to-No-Reference</h2>
                 <p><strong>Autores:</strong> André Neto, Nuno Gonçalves</p>
-                <p><strong>Publicado em:</strong> IbPRIA 2025 &mdash; 12ª Conferência Ibérica sobre Reconhecimento de Padrões e Análise de Imagem</p>
-                <p><strong>Resumo:</strong> Existe uma discrepância persistente entre as métricas padrão de Avaliação da Qualidade de Imagem (IQA) e os julgamentos perceptivos humanos, geralmente quantificados através de Mean Opinion Scores (MOS). Esta lacuna representa um desafio crítico para tarefas onde a qualidade visual impacta diretamente o desempenho, como é o caso do reconhecimento facial e da transmissão de dados visuais. Em particular, a avaliação da qualidade perceptiva de imagens faciais distorcidas por esteganografia continua a ser difícil, especialmente na ausência de imagens de referência. Para enfrentar este problema, propomos uma framework híbrida de Avaliação da Qualidade de Imagem Facial (FIQA), que transita do modelo com referência total para o modelo sem referência, baseada numa estratégia de aprendizagem orientada por pseudo-MOS. Primeiramente, é treinada uma métrica de fusão full-reference, através da regressão de múltiplas métricas clássicas de IQA com base nos valores MOS humanos, numa subamostra de um conjunto de dados faciais. Esta métrica é então aplicada ao conjunto completo para gerar rótulos pseudo-MOS. Utilizando deep features extraídas de um modelo ResNet-18 pré-treinado no ImageNet, treinamos um regressor no-reference capaz de prever a qualidade perceptiva. A framework proposta liga a supervisão full-reference à inferência no-reference, oferecendo uma solução escalável e precisa para FIQA em condições desafiantes, abrindo caminho para concepções de IQA orientadas por dados e específicas para cada aplicação.
+                <p><strong>Publicado em:</strong> <a href="https://www.ibpria.org/2025/" target="_blank"> IbPRIA 2025 &mdash; 12.ª Conferência Ibérica sobre Reconhecimento de Padrões e Análise de Imagem </a></p>
+                <p><strong>Resumo:</strong> Este trabalho propõe uma framework híbrida Full-to-No-Reference para Avaliação da Qualidade de Imagens Faciais (FIQA), com o objetivo de colmatar a discrepância entre métricas tradicionais de IQA e a perceção humana, especialmente em imagens faciais distorcidas por esteganografia. A abordagem inicia-se com o treino de uma métrica de fusão full-reference, obtida através da regressão de várias métricas clássicas de IQA contra valores MOS humanos. Este modelo é então utilizado para gerar rótulos pseudo-MOS em todo o conjunto de dados, possibilitando o treino de um regressor no-reference baseado em características extraídas de uma ResNet-18 pré-treinada. A framework combina eficazmente supervisão com referência com inferência sem referência, oferecendo uma solução escalável e alinhada com a perceção para FIQA.
                 </p>
 
                 <div class="publication-actions">
                     <a href="../../assets/articles/ibpria2025.pdf" class="button" target="_blank" >Ler artigo</a>
                     <a href="../../assets/articles/ibpria2025.pdf" download class="button">Descarregar PDF</a>
+                </div>
+            </article>
+
+            <article class="publication-item">
+                <h2>Melhoria da Estética de Códigos Legíveis por Máquina: Um Novo Padrão de Codificação Iconográfica</h2>
+                <p><strong>Autores:</strong> André Neto, Allan Freitas, João Marcos, Nuno Gonçalves</p>
+                <p><strong>Publicado em:</strong> <a href="https://icir.ieee.org/home-2024/" target="_blank">ICIR 2025 — 3.ª Conferência Internacional IEEE sobre Realidade Inteligente</a></p>
+                <p><strong>Resumo:</strong> Este artigo apresenta o novo Código Gráfico baseado em Ícones, um novo paradigma para códigos legíveis por máquina com estética configurável. Os dados são codificados como uma sequência de ícones posicionados sobre a região do código. O design e a posição dos ícones são definidos para cada aplicação, permitindo controlo total sobre a estética final do código.
+                </p>
+            
+                <div class="publication-actions">
+                    <a href="../../assets/articles/icir2024.pdf" class="button" target="_blank">Ler artigo</a>
+                    <a href="../../assets/articles/icir2024.pdf" download class="button">Descarregar PDF</a>
                 </div>
             </article>
 

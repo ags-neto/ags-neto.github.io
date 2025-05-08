@@ -437,7 +437,7 @@ a:hover {
 }
 
 /* Ensure buttons have a minimum size */
-.navegacao-sessoes .botao {
+.button {
 	padding: 0.6rem 1.2rem;
 	background-color: var(--contrast-color);
 	color: var(--background-color);
@@ -457,7 +457,7 @@ a:hover {
 }
 
 /* Hover effect */
-.navegacao-sessoes .botao:hover {
+.button:hover {
 	background-color: var(--text-color);
 }
 
@@ -495,24 +495,3 @@ a:hover {
   align-items: center;
 }
 
-.publication-actions .button {
-  padding: 0.6rem 1.2rem;
-  background-color: var(--contrast-color);
-  color: var(--background-color);
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-  font-size: 1rem;
-}
-
-.publication-actions .button:hover {
-  background-color: var(--text-color);
-  color: var(--background-color);
-}
-
-.citation-info {
-  font-size: 0.9rem;
-  color: var(--muted-text-color);
-  font-family: monospace;
-}
