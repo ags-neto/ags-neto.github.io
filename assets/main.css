@@ -320,6 +320,10 @@ a:hover {
   transform: translate(50%, -50%);
 }
 
+.zigzag-timeline__item:last-of-type {
+  border-bottom: none;
+}
+
 .zigzag-timeline__content {
   display: inline-block;
   background-color: transparent;
@@ -327,6 +331,7 @@ a:hover {
   border-radius: 6px;
   max-width: 91%;
 }
+
 
 /* ============================
    FOOTER STYLES
