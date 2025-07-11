@@ -489,9 +489,6 @@ a:hover {
   box-shadow: 0 0 20px -10px var(--contrast-color);
 }
 
-
-
-
 .publication-actions {
   display: flex;
   flex-wrap: wrap;
@@ -500,3 +497,4 @@ a:hover {
   align-items: center;
 }
 
+.ml-auto { margin-left: auto; }
