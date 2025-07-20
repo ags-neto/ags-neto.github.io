@@ -103,6 +103,10 @@ a:hover {
   transition: color 0.3s;
 }
 
+.navbar h3 {
+  color: var(--contrast-color);
+}
+
 /* ============================
    PROFILE CARD STYLES
    ============================ */
