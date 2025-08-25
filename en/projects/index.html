@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="André Neto's Publications.">
+    <meta name="author" content="André Neto">
+
+    <title>André Neto</title>
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <link rel="stylesheet" href="../../assets/main.css">
+
+    <script src="../../assets/js/date-manager.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+
+            <p><a href="../">André Neto</a></p>
+
+			<p><a href="../about">About me</a></p>
+            <p><a href="../articles">Articles</a></p>
+            <h3>Projects</h3>
+
+			<p><a href="../../pt/projects/">Português</a></p>
+
+		</nav>
+    </header>
+
+    <main class="container">
+        <section class="publication-list">
+
+            <article class="publication-item">
+                <h2>pyenv-check-reqs</h2>
+                <p class="location">Jun 2025 &bull; Finished</p>
+                <p><strong>Keywords:</strong> AUR (Arch User Repository), Python, Pyenv</p>
+                <p><strong>Summary:</strong> Aren't you tired of creating a python environment for a developing project, seeing that requirements.txt and not being sure which python versions best even runs its dependencies? No more! Introducing, <strong>pyenv-check-reqs</strong>, a pipx, pyenv simulator that tries to run python versions from 3.8 to most recent, and outputs you the versions that runs your projects!
+
+                <div class="publication-actions">
+                    <a href="https://github.com/ags-neto/pyenv-check-reqs.git" class="button" target="_blank" >Git</a>
+                </div>
+            </article>
+
+            <!-- Mais artigos aqui -->
+        </section>
+    </main>
+
+    <footer class="site-footer container">
+        <hr>
+        <p>&copy; <span id="copyright"></span> André Neto</p>
+        <a href="mailto:email@ags-neto.com">email@ags-neto.com</a>
+    </footer>
+
+    <script>
+        async function fetchCitations(doi, elementId) {
+            try {
+                const res = await fetch(`https://api.semanticscholar.org/graph/v1/paper/${doi}?fields=citationCount`);
+                const data = await res.json();
+                document.getElementById(elementId).textContent = data.citationCount || '0';
+            } catch (e) {
+                document.getElementById(elementId).textContent = 'N/D';
+            }
+        }
+
+        fetchCitations('DOI_DO_ARTIGO_AQUI', 'citations-artigo-1');
+    </script>
+</body>
+
+</html>
