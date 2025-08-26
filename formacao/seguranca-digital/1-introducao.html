@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Sessão 1">
+	<meta name="author" content="André Neto">
+
+	<title>Segurança Digital - Aula 1</title>
+	<link rel="icon" type="image/png" href="../../favicon.png">
+	<link rel="stylesheet" href="../../assets/main.css">
+</head>
+
+<body>
+
+	<main class="classes">
+
+		<section class="navegacao-sessoes">
+			<div class="botao-esquerda">
+				<a href="index.html" class="button">&#171; Voltar</a>
+			</div>
+		</section>
+
+		<h1>Sessão 1: Introdução à Segurança Digital</h1>
+
+		<section>
+			<h2>Apresentação e Objetivos</h2>
+			<p>Segurança digital é o conjunto de práticas para proteger a nossa identidade, dados e dispositivos quando usamos a internet.
+			   Nesta primeira sessão vamos perceber os conceitos básicos e começar a criar hábitos seguros.</p>
+		</section>
+
+		<section>
+            <h2>Endereço IP</h2>
+            <p>O <strong>IP</strong> (Protocolo de Internet) é um número que identifica um dispositivo numa rede. É essencial para que a informação chegue ao destino correto.</p>
+
+            <h3>1. Tipos de IP</h3>
+            <ul>
+                <li><strong>IP Público:</strong> Identifica a tua ligação na Internet. É atribuído pelo fornecedor de Internet (ISP) e é visível para sites e serviços.</li>
+                <li><strong>IP Privado:</strong> Usado dentro da rede doméstica ou empresarial.</li>
+                <li><strong>IPv4:</strong> Formato mais comum, 4 grupos de números (ex.: 192.168.0.1).</li>
+                <li><strong>IPv6:</strong> Formato mais recente, suporta muito mais endereços (ex.: 2001:0db8:85a3:fe01:0000:0000:0000:0000)</li>
+            </ul>
+
+            <h3>2. IP de Rede vs IP de Dispositivo</h3>
+            <ul>
+                <li>O <strong>IP da rede</strong> (público) é partilhado por todos os dispositivos ligados ao mesmo router.</li>
+                <li>Cada <strong>dispositivo</strong> recebe um IP privado único dentro da rede.</li>
+            </ul>
+
+            <h3>3. Que dispositivos têm IP?</h3>
+            <ul>
+                <li>Computadores, portáteis e telemóveis.</li>
+                <li>Tablets e consolas de jogos.</li>
+                <li>Smart TVs (uma TV normal não tem IP).</li>
+                <li>Equipamentos IoT (câmaras, assistentes virtuais, impressoras, etc.).</li>
+            </ul>
+
+            <h3>4. Como alguém pode obter o teu IP?</h3>
+            <ul>
+                <li>Quando visitas um site (o servidor regista o IP público).</li>
+                <li>Em chamadas P2P (ex.: jogos online, torrents).</li>
+                <li>Ao clicar num link ou imagem que regista pedidos no servidor.</li>
+            </ul>
+
+            <h3>5. O que podem fazer com o teu IP?</h3>
+            <ul>
+                <li>Determinar a localização aproximada (cidade/região).</li>
+                <li>Bloquear-te o acesso a um serviço (banimento).</li>
+                <li>Lançar ataques DDoS para sobrecarregar a tua ligação.</li>
+                <li>Tentar explorar vulnerabilidades no teu router (se não estiver protegido).</li>
+            </ul>
+
+            <h3>6. Como proteger e esconder o IP?</h3>
+            <ul>
+                <li>Usar uma <strong>VPN</strong> para mascarar o IP público.</li>
+                <li>Evitar Wi-Fi público sem proteção (usar VPN ou rede móvel).</li>
+                <li>Manter router e firewall atualizados.</li>
+            </ul>
+
+            <h3>7. Exercícios práticos</h3>
+            <ol>
+                <li>Ver o teu IP e localização em <a href="https://whatismyipaddress.com" target="_blank">What Is My IP Address</a>.</li>
+                <li>Ligar uma VPN e verificar como o IP muda.</li>
+                <li>Listar todos os dispositivos ligados à tua rede usando <a href="https://nmap.online" target="_blank">Nmap Online</a> ou app de gestão do router.</li>
+            </ol>
+        </section>
+
+		<section>
+			<h2>[15:00 - 25:00] Identidade Digital</h2>
+			<p>Tudo o que publicamos, pesquisamos ou partilhamos constrói a nossa identidade digital.  
+			   Uma vez online, é muito difícil apagar algo completamente.</p>
+			<ul>
+				<li>Evitar publicar dados pessoais (morada, escola, telefone).</li>
+				<li>Pensar antes de partilhar fotos ou vídeos.</li>
+				<li>Desativar geolocalização em fotos.</li>
+			</ul>
+			<p>Exercício: pesquisar o próprio nome no Google e analisar o que aparece.</p>
+		</section>
+
+		<section>
+			<h2>[25:00 - 40:00] Segurança em Redes Sociais</h2>
+			<p>As redes sociais recolhem dados para mostrar conteúdo e anúncios. É importante configurar a privacidade.</p>
+			<ul>
+				<li>Revisão de permissões e amigos/contactos.</li>
+				<li>Evitar aceitar pedidos de estranhos.</li>
+				<li>Não clicar em links suspeitos no chat.</li>
+			</ul>
+			<p>Links úteis para testar:</p>
+			<ul>
+				<li><a href="https://phishingquiz.withgoogle.com" target="_blank">Quiz de links suspeitos</a></li>
+				<li><a href="https://haveibeenpwned.com" target="_blank">Ver se o meu email foi comprometido</a></li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>[40:00 - 55:00] Noções de Segurança Técnica</h2>
+			<ul>
+				<li>HTTPS vs HTTP — sempre preferir sites com HTTPS.</li>
+				<li>Wi-Fi público — usar apenas com VPN e evitar transações sensíveis.</li>
+				<li>Atualizações — manter sistemas e apps atualizados.</li>
+			</ul>
+			<p>Exercício: abrir dois sites, um com HTTP e outro com HTTPS, e ver o ícone do cadeado no browser.</p>
+		</section>
+
+		<section>
+			<h2>[55:00 - 75:00] Passwords Seguras</h2>
+			<p>Uma boa password é longa, única e difícil de adivinhar.</p>
+			<p>Fórmula exemplo: <code>[PalavraBase]+[Ano]+[2 letras do site]</code></p>
+			<p>Exemplo: <code>SolAzul2024FB</code> (Facebook) e <code>SolAzul2024GM</code> (Gmail).</p>
+			<p>Ferramenta para testar força da password: <a href="https://www.security.org/how-secure-is-my-password/" target="_blank">Password Strength Test</a></p>
+		</section>
+
+		<section>
+			<h2>[75:00 - 90:00] Desafio da Sessão</h2>
+			<ol>
+				<li>Descobrir o teu IP público.</li>
+				<li>Pesquisar o teu nome no Google e listar 3 resultados.</li>
+				<li>Fazer o quiz de phishing e anotar pontuação.</li>
+				<li>Alterar uma password fraca para uma fórmula segura.</li>
+			</ol>
+		</section>
+
+		<section class="navegacao-sessoes">
+			<div class="botao-esquerda">
+				<a href="index.html" class="button">&#171; Voltar</a>
+			</div>
+			<div class="botao-direita">
+				<a href="2-contas-online.html" class="button">Aula 2: Contas Online &#187;</a>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="site-footer container">
+		<hr>
+		<p>&copy; <span id="copyright"></span> André Neto</p>
+		<a href="mailto:formacao@ags-neto.com">formacao@ags-neto.com</a>
+	</footer>
+
+	<script>
+		document.getElementById("copyright").innerText = new Date().getFullYear();
+	</script>
+
+</body>
+
+</html>
